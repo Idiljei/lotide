@@ -1,10 +1,13 @@
 // FUNCTION IMPLEMENTATION
 const assertEqual = function(actual, expected) {
 
-  let comparison = actual === expected
+  if ( actual === expected ) {
+   console.log(`Assertion Passed: ${actual} === ${expected}`); 
 
-  return comparison
-
+  } else {
+    console.log(`Assertion failed: ${actual} !== ${expected}`);
+  }
+  
 };
 
 // TEST CODE
