@@ -11,24 +11,18 @@ const assertEqual = function(actual, expected) {
 };
 
 const countLetters = function (string) {
-  let results = {}
+  let results = {}  //return a object
 
-  for (const letter of string) {
-   if (results[letter]) {  
-    results[letter] += 1
+  for (const letter of string) { //loop over letters in the string
+   if (results[letter]) {   //if true
+    results[letter] += 1    //increment by 1
    } else { 
-     results[letter] = 1
+     results[letter] = 1    // letter only shows up once 
    }
 
-
- ///  return newString = string.match(/a/b/c/d/e/f/g/h/i/j/k/l/m/n/o/p);
   }
   return results
 }
-
-//takes in a string
-// return count of each of the letters in that sentence
-// can use for of loops 
 
 assertEqual(countLetters("Hello"), { H: 1, e: 1, l: 2, o: 1 });
 console.log(countLetters("Hello"));
